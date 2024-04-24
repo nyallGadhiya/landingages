@@ -1,0 +1,65 @@
+
+:root
+{
+    --salmon: salmon;
+    --black: #000;
+    --white: #fff;
+    --dsalmon: rgb(113, 57, 50);
+    --dcyan :rgb(16, 45, 45);
+}
+
+*::selection
+{
+    background-color: palevioletred;
+}
+body
+{
+    transition: all ease 2.2s;
+}
+body[theme="black"]
+{
+    background-color: black;
+
+}
+body[theme="black"] .section {
+  color: rgb(255, 255, 255);
+
+}   
+body[theme="cyan"]
+{
+    background-color: rgb(33, 188, 188);
+    
+}
+body[theme="cyan"] .section
+{
+    color: var(--dcyan);
+    
+}
+body[theme="salmon"]
+{
+    background-color: salmon;
+    
+}
+
+body[theme="salmon"] .section
+{
+    color: var(--dsalmon);
+    
+}
+
+body[theme="white"]
+{
+    background-color: whitesmoke;
+    
+}
+
+body[theme="white"] .section
+{
+    color: var(--black);
+    
+}
+
+.vid1
+{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
